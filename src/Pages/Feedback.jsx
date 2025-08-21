@@ -15,8 +15,10 @@ export default function FeedbackApp() {
     fetchFeedbacks();
   }, []);
 
+  const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:3005";
+
   const fetchFeedbacks = async () => {
-    const res = await fetch("http://localhost:3005/api/feedback/");
+    const res = await fetch(`${API_BASE}/api/feedback/`);
     const data = await res.json();
     setFeedbacks(data);
   };
@@ -28,7 +30,7 @@ export default function FeedbackApp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (editId) {
-      await fetch(`http://localhost:3005/api/feedback/${editId}`, {
+      await fetch(`${API_BASE}/api/feedback/${editId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -36,7 +38,7 @@ export default function FeedbackApp() {
       setEditId(null);
     } else {
      
-      await fetch("http://localhost:3005/api/feedback/", {
+      await fetch(`${API_BASE}/api/feedback/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -47,7 +49,7 @@ export default function FeedbackApp() {
   };
 
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:3005/api/feedback/${id}`, { method: "DELETE" });
+    await fetch(`${API_BASE}/api/feedback/${id}`, { method: "DELETE" });
     fetchFeedbacks();
   };
 

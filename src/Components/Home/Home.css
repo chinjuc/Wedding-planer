@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nata+Sans:wght@100..900&family=Outfit:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sevillana&family=WDXL+Lubrifont+TC&family=Winky+Sans:ital@0;1&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: rgb(80, 13, 55);
+    /* background-color: rgb(163, 62, 80); */
+    /* background-color: #C49AE1; */
+    /* background-color: #ECB0D9; */
+    color: white;
+    width: auto;
+}
+.nav-topic{
+    margin: 0px -150px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+.home-img{
+    background-image: url(../../assets/wed2.jpg);
+    /* background-image: url(../../assets/pexels-pavel-danilyuk-7119218.jpg); */
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.butn{
+    position: absolute;
+    top: 100px;
+    right: 80px;
+}
+.butn input{
+    padding: 15px 20px;
+    width: 290px;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: rgb(138, 40, 64); */
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    /* border-radius: 10px; */
+    border: 2px solid rgb(202, 37, 64);
+}
+.butn input::placeholder{
+    color: white;
+    word-spacing:6px;
+    letter-spacing: 5px;
+}
+.butn img{
+    padding: 0px;
+    margin: -3px;
+}
+
+@media (max-width:1024px){
+    .nav-topic{
+        margin: 0px;
+        letter-spacing: 0px;
+    }
+}

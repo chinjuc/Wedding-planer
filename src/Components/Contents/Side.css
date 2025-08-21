@@ -1,0 +1,47 @@
+.side-title{
+    /* background-color: #edd9d9; */
+    width: 600px;
+    margin: 30px 250px;
+}
+.side-para{
+    background-color: #9c6a6ac3;
+    width: auto;
+    margin: 30px 250px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.side-img{
+    border-radius: 20px;
+    width:750px;
+}
+.varity{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.varities{
+    font-size: 30px;
+    display: none;
+}
+@media (max-width:728px) {
+    .side-img{
+        width: 300px;
+    }
+    .side-para{
+        margin: 10px;
+        letter-spacing: 0px;
+    }
+    .side-title{
+        margin: 0px;
+        width: auto;
+    }
+    .varity{
+        display: none;
+    }
+    .varities{
+        display: block;
+        font-size: 18px;
+
+    }
+}

@@ -23,10 +23,7 @@
     /* background-color: rgb(150, 61, 82); */
     /* background-color: rgba(150, 61, 82, 0.666); */
     background-color: rgba(163, 62, 80, 0.811);
-    border-radius: 10px;
-    /* background-image: url(../../assets/decoration1.jpg);
-    background-position: center;
-    background-size: cover; */
+    border-radius: 10px; 
 }
 
 .col-plan:hover {

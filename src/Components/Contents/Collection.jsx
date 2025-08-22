@@ -12,9 +12,8 @@ const lists = [
   { name: 'Invitations', img: asset.invitation, costumers: '283+', link:'invitations' },
   { name: 'Dj', img: asset.dj, costumers: '2344+',link:'dj' },
   { name: 'Venues', img: asset.Decoration1, costumers: '3244+',link:'venue' },
-  { name: 'Dj', img: asset.Wedding1, costumers: '2345+', link:'dj' },
-  { name: 'Party', img: asset.Wedding1, costumers: '2345+', link:'party' },
-  { name: 'Bride planning', img: asset.Wedding1, costumers: '2345+', link:'bridal' },
+  { name: 'Party', img: asset.dj2, costumers: '2345+', link:'party' },
+  
 ]
 
 const Collection = () => {

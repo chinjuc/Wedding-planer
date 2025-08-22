@@ -16,7 +16,6 @@ const App = () => {
       <BrowserRouter>
         <Nav />
         <Routes>
-          {/* Home + Collection */}
           <Route
             path="/"
             element={

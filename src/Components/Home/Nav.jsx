@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { asset } from '../../assets/asset';
+import { Link } from 'react-router-dom';
 const Navs = () => {
   return (
     <div>
@@ -17,7 +18,7 @@ const Navs = () => {
 
                         </Nav>
                         <Nav className='nav-topic'>
-                            <Nav.Link href=""  style={{color:'white'}}> Home</Nav.Link>
+                            <Nav.Link as={Link} to="/" href=""  style={{color:'white'}}> Home</Nav.Link>
                            <Nav.Link href="#events" style={{color:'white'}} >Events</Nav.Link>
                             <Nav.Link href="#about" style={{color:'white'}}>About Us </Nav.Link>
                             <Nav.Link href="#contact" style={{color:'white'}}>Contact </Nav.Link>

@@ -69,6 +69,11 @@ font-family: 'Winky Sans', sans-serif;
     }
     .abt-img{
         margin-bottom: 40px;
+        width: auto;
+    }
+    .abt-img img{
+        margin-bottom: 40px;
+        width: 280px;
     }
 
     .abt-right {
@@ -76,7 +81,8 @@ font-family: 'Winky Sans', sans-serif;
         margin: 0px;
     }
     .abt-para{
-        padding: 2px;
+        padding: 4px;
+        font-size: 14px;
     }
 
 }

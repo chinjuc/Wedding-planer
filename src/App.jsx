@@ -7,7 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Collist from './Components/Contents/Collist';
 import Sidebar from './Components/Contents/Sidebar';
 import 'aos/dist/aos.css';
-import FeedbackApp from './Pages/Feedback';
+import About from './Components/Home/About';
+import Footer from './Components/Home/Footer';
 
 const App = () => {
   return (
@@ -27,13 +28,12 @@ const App = () => {
           />
 
           <Route path="/collection/:service" element={<Collist />}>
-            <Route index element={<Sidebar />} />          
+            <Route index element={<Sidebar />} />
             <Route path=":varietyId" element={<Sidebar />} />
-            {/* <Route element={<FeedbackApp />}></Route> */}
-            {/* <Route path="/feedback" element={<FeedbackApp /> } /> */}
           </Route>
-
+          <Route path="/about" element={<About />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )

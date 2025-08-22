@@ -17,7 +17,7 @@ body{
     width: auto;
 }
 .nav-topic{
-    margin: 0px -150px;
+    margin: 0px -150px !important;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 2px;
 }
@@ -58,7 +58,7 @@ body{
 
 @media (max-width:1024px){
     .nav-topic{
-        margin: 0px;
+        margin: 0px !important;
         letter-spacing: 0px;
     }
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { asset } from '../../assets/asset'
 import './About.css'
 import ImageSlider from '../Contents/ImageSlider'
+import Contact from '../../Pages/Contact'
 const About = () => {
 
   const abouts=[
@@ -30,6 +31,7 @@ const About = () => {
     ))}
   </div>
 </div>
+<Contact />
     </>
   )
 }

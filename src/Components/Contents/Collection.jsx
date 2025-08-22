@@ -13,7 +13,6 @@ const lists = [
   { name: 'Dj', img: asset.dj, costumers: '2344+',link:'dj' },
   { name: 'Venues', img: asset.Decoration1, costumers: '3244+',link:'venue' },
   { name: 'Party', img: asset.dj2, costumers: '2345+', link:'party' },
-  
 ]
 
 const Collection = () => {

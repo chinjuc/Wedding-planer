@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import './Colle.css'
 import About from '../Home/About'
 import { Link } from 'react-router-dom'
-import FeedbackApp from '../../Pages/Feedback'
 const lists = [
   { name: 'Decorators', img: asset.Decoration, costumers: '3486+',link:'decor' },
   { name: 'Photographers', img: asset.Photographer, costumers: '3293+', link:'photos' },
@@ -42,7 +41,6 @@ const Collection = () => {
         ))}
       </div>
       <About />
-      {/* <FeedbackApp/> */}
     </div>
     
   )

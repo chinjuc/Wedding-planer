@@ -15,7 +15,7 @@ export default function FeedbackApp() {
     fetchFeedbacks();
   }, []);
 
-  const API_BASE = process.env.REACT_APP_API_URL 
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:3005";
 
   const fetchFeedbacks = async () => {
     const res = await fetch(`${API_BASE}/api/feedback/`);

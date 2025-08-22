@@ -31,7 +31,7 @@ const About = () => {
     ))}
   </div>
 </div>
-<Contact />
+{/* <Contact /> */}
     </>
   )
 }
